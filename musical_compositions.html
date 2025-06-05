@@ -6,7 +6,6 @@
     <style>
         body {
             color: #000000;
-            font-family: Arial, Helvetica, sans-serif;
         }
         
         nav {
@@ -15,7 +14,9 @@
         }
 
         table {
+            background-color: #E5D5C5;
             border-collapse: collapse;
+            color: #000000;
             text-align: center;
             width: 100%;
         }
@@ -37,8 +38,27 @@
         td.description, th.description { width: 30%; }
 
         td.video img {
-            background-color: #FFFFFF;
             width: 100%;
+        }
+
+        .video_thumbnail_wrapper {
+            display: block;
+            position: relative;
+        }
+               
+        .play_button {
+            color: #FF0000;
+            font-size: 50px;
+            left: 50%;
+            position: absolute;
+            text-shadow: 0 0 10px #000000;
+            top: 50%;
+            transform: translate(-50%, -50%);    
+        }
+
+        .play_button:hover {
+            font-size: 60px;
+            text-shadow: 0 0 20px #000000;
         }
     </style>
 </head>
@@ -65,8 +85,9 @@
         <td class="year">2025</td>
         <td class="duration">01:07</td>
         <td class="video">
-            <a href="files/spring_came_by_our_fields.mp4">
+            <a href="files/spring_came_by_our_fields.mp4" class="video_thumbnail_wrapper">
                 <img src="files/spring_came_by_our_fields.png" alt="Video thumbnail.">
+                <span class="play_button">&#9658;</span>
             </a>
         </td>
         <td class="score"><a href="files/spring_came_by_our_fields.pdf">PDF</a></td>
@@ -78,8 +99,9 @@
         <td class="year">2024</td>
         <td class="duration">03:11</td>
         <td class="video">
-            <a href="files/little_string_quartet_piece.mp4">
+            <a href="files/little_string_quartet_piece.mp4" class="video_thumbnail_wrapper">
                 <img src="files/little_string_quartet_piece.png" alt="Video thumbnail.">
+                <span class="play_button">&#9658;</span>
             </a>
         </td>
         <td class="score"><a href="files/little_string_quartet_piece.pdf">PDF</a></td>
