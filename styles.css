@@ -1,0 +1,25 @@
+body {
+    background-color: #E5D2B8;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    border-bottom: 2px solid #000000;
+    margin-bottom: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+
+table th,
+table td {
+    border: 1px solid #000000;
+}
+
+table tr {
+    border-bottom: 2px solid #000000;
+}
